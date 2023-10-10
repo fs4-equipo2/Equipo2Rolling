@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.caja {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    border: 2px solid black;
+}
+ul {
+    list-style: none;
+}
+#lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    width: 180px;
+    height: 335px;
+}
+.cuadro-imagen {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+}
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+.enlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
