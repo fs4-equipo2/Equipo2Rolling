@@ -1,20 +1,45 @@
+html {
+    scroll-behavior: auto;
+  }
 body{
-    width: 1260px;
-    background-color: aqua;
-}
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 
+}
 .morenews{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    align-self: center;
+    width: 70%;
+    height: 1700px;
+    background-color: blue;
 }
-.news{
+.card{
+    width: 845px;
+    height: 280px;
+    background-color: lightblue;
+    align-self: center;
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 10px;
 }
-.morenews img{
-   width: 310px;
-   height: 266px;
+.imagen{
+    width: 35%;
+    height: 200px;
+    align-self: center;
+}
+.imagen img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.contenido{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
 }
