@@ -1,0 +1,8 @@
+.division-tres-lista-arts {
+    display: flex;
+    flex-direction: row;
+}
+
+.division-tres img {
+    height: 12rem;
+}

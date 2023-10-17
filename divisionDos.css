@@ -1,0 +1,13 @@
+.division-dos-fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.division-dos-fila-arts {
+    display: flex;
+    flex-direction: row;
+}
+
+.division-dos img {
+    height: 12rem;
+}
