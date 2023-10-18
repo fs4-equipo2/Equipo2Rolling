@@ -1,8 +1,81 @@
-.division-tres-lista-arts {
+.division-tres-borde {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.division-tres-box {
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background-color: #EFEFEF;
+}
+
+.division-tres-box img {
+    width: 8rem;
+}
+
+.division-tres-box-titulo-text{
+    padding-left: 1rem;
+    font-size: 15px;
+}
+.division-tres-box-titulo-aviso{
+    min-width: max-content;
+    padding-left: 2rem;
+}
+
+.division-tres-box-top-boton{
+    border-left: 1px solid black;
+    padding-left: 0.5rem;
+    font-size: 13px;
+}   
+
+.division-tres-box-top-boton-borde {
+    border-left: 1px solid black;
+    padding-left: 1rem;
+    height: 90px;
+} 
+.division-tres-box-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 3rem;
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+
+.division-tres-box-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+   
+.division-tres-fila {
     display: flex;
     flex-direction: row;
 }
-
-.division-tres img {
-    height: 12rem;
+.division-tres-fila > *{
+    padding-right: 20px;
+    border-right: 1px solid black;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+.division-tres-card {
+    display: flex;
+    flex-direction: column;
+    height: 14.5rem;
+    width: 100%;
+}
+.division-tres-card:last-of-type{
+    border-right: none;
+}
+.division-tres-margen-top-grueso{
+    position: relative;
+    border : 3px solid black;
+    width: 100%;
+    top: 1rem;
+}
+.division-tres-card a {
+    padding-top: 2rem;
 }

@@ -7,41 +7,54 @@
     margin-top: 4px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    margin-bottom: 3.5rem;
 }
 
 .division-uno-fila {
     display: flex;
     flex-direction: row;
-    padding: 16px 0;
+    flex-wrap: nowrap;
+    padding: 1rem 0;
+    height: 8rem;
+    margin-top: 0.25rem;
+    min-width: 100%;
+    gap: 1rem;
+    overflow: scroll;
 }
 
-.division-uno-elemento {
-    height: 98px;
-    position:relative;
-    overflow:hidden;
-    flex-grow: 1;
-}
-
-.division-uno-elemento a {
+.division-uno-card {
     display: flex;
     flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    min-width: fit-content;
+    height: 110px;
+    gap: 1.5rem;
+    overflow:hidden;
 }
 
-.division-uno-elemento:nth-child(2), .division-uno-elemento:nth-child(3), .division-uno-elemento:nth-child(4) {
+.division-uno-card:nth-child(2), .division-uno-card:nth-child(3), .division-uno-card:nth-child(4) {
     padding-left: 24px;
     margin-left: 24px;
     border-left: 1px solid black;
 }
 
-.division-uno-elemento-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.division-uno-card-img {
+    min-width: 98px;
+    height: 110px;
+    position: relative;
 }
 
-.division-uno-elemento-img img {
-    box-sizing: content-box;
-    
-} 
+.division-uno-card-img > img {
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    object-fit: contain;
+}
 
+.division-uno-card-text {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    flex-basis: 50%;
+}
