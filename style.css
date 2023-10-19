@@ -1,8 +1,10 @@
-body {
+#recom {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.caja {
+
+.caja-recom {
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -10,38 +12,48 @@ body {
     align-items: center;
     border: 2px solid black;
 }
-ul {
-    list-style: none;
-}
-#lista {
+
+#lista-recom {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px;
+    list-style: none;
 }
-.card {
+
+.card-recom {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 30px;
-    width: 180px;
-    height: 335px;
+    justify-content: center;
+    padding: 20px;
+    width: 170px;
+    height: 300px;
 }
-.cuadro-imagen {
+
+.cuadro-imagen-recom {
     display: flex;
     border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
-.imagen {
+
+.imagen-recom {
     display: flex;
     justify-content: center;
 }
-.enlace {
-    display: flex;
-    flex-direction: column;
+
+.enlace-recom, .branded-content-recom{
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
+
+.name-recom {
+    text-align: center;
+    font-size: small;
+    text-decoration: underline;
+}
+
+
