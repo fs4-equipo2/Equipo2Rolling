@@ -20,7 +20,7 @@ body{
 }
 hr{
     display: flex;
-    height: 2px;
+    height: 1px;
     width: 845px;
     background-color: black;
     border: none;
@@ -59,7 +59,7 @@ hr{
     height: 300px;
 }
 .exclusive > .contenido p:first-child{
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: underline;
     text-decoration-style: double;
     text-underline-offset: 6px;
@@ -70,7 +70,7 @@ hr{
 
 .exclusive > .contenido h2{
     font-size: 30px;
-    font-weight: 300;
+    font-weight: bolder;
     margin-top: 0;
     margin-bottom: 10px;
 }
