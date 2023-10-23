@@ -30,6 +30,12 @@
     max-width: 15rem;
 }
 
+.division-dos-card-separador{
+    width: auto;
+    border: 1px solid black;
+    margin: 0.25rem 0 1rem 0;
+}
+
 .division-dos-fila-logo-top,  .division-dos-fila-logo-bottom {
     height: auto;
     width: 100%;

@@ -1,3 +1,8 @@
+h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
 .division-uno {
     margin-bottom: 56px;
     border-top: 1px solid black;
@@ -33,11 +38,12 @@
     overflow:hidden;
 }
 
-.division-uno-card:nth-child(2), .division-uno-card:nth-child(3), .division-uno-card:nth-child(4) {
+.division-uno-card:not(:first-child){
     padding-left: 24px;
     margin-left: 24px;
     border-left: 1px solid black;
 }
+
 
 .division-uno-card-img {
     min-width: 98px;
@@ -57,4 +63,10 @@
     flex-direction: column;
     height: 110px;
     flex-basis: 50%;
+}
+
+.division-uno-card-separador{
+    width: auto;
+    border: 1px solid black;
+    margin: 0.25rem 0 1rem 0;
 }

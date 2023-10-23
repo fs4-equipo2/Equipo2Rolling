@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .division-tres-borde {
     border: 1px solid black;
     padding: 10px;
@@ -8,10 +13,11 @@
     padding: 20px;
     position: relative;
     background-color: #EFEFEF;
+    overflow: hidden;
 }
 
 .division-tres-box img {
-    width: 8rem;
+    width: 10rem;
 }
 
 .division-tres-box-titulo-text{
@@ -23,6 +29,16 @@
     padding-left: 2rem;
 }
 
+.division-tres-box-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+
 .division-tres-box-top-boton{
     border-left: 1px solid black;
     padding-left: 0.5rem;
@@ -30,19 +46,11 @@
 }   
 
 .division-tres-box-top-boton-borde {
+    display: flex;
+    align-items: center;
     border-left: 1px solid black;
     padding-left: 1rem;
     height: 90px;
-} 
-.division-tres-box-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    line-height: 3rem;
-    padding: 0 20px;
-    margin-top: 2rem;
 }
 
 .division-tres-box-titulo {
