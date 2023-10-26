@@ -18,14 +18,14 @@ body{
 .morenews hr:nth-of-type(2){
     margin-top: 3px;
 }
-hr{
+.morenews hr{
     display: flex;
     height: 1px;
     width: 100%;
     background-color: black;
     border: none;
 }
-.sectiontitle{
+.morenews .sectiontitle{
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -38,7 +38,7 @@ hr{
     height: 1700px;
     background-color: white;
 }
-.card{
+.morenews .card{
     width: 100%;
     height: 220px;
     /* background-color: lightblue; */
@@ -48,17 +48,17 @@ hr{
     gap: 20px;
     align-items: center;
     }
-.exclusive{
+.morenews .exclusive{
     height: 350px;
 }
-.exclusive > .imagen{
+.morenews .exclusive > .imagen{
     width: 450px;
     height: 300px;
 }
-.exclusive > .contenido{
+.morenews .exclusive > .contenido{
     height: 300px;
 }
-.exclusive > .contenido p:first-child{
+.morenews .exclusive > .contenido p:first-child{
     font-weight: bolder;
     text-decoration: underline;
     text-decoration-style: double;
@@ -68,39 +68,39 @@ hr{
     margin-bottom: 20px;
 }
 
-.exclusive > .contenido h2{
+.morenews .exclusive > .contenido h2{
     font-size: 30px;
     font-weight: bolder;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.exclusive > .contenido > .author{
+.morenews .exclusive > .contenido > .author{
     font-size: 15px;
 }
-.exclusive > .contenido > .author a{
+.morenews .exclusive > .contenido > .author a{
     font-size: 15px;
 }
 
 
-.imagen{
+.morenews .imagen{
     width: 30%;
     height: 180px;
     align-self: center;
 }
-.imagen img{
+.morenews .imagen img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.contenido{
+.morenews .contenido{
     width: 60%;
     height: 180px;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
 }
-.contenido p:first-child{
+.morenews .contenido p:first-child{
 font-weight: bold;
 text-decoration: underline;
 text-underline-offset: 6px;
@@ -109,30 +109,30 @@ margin-top: 0;
 margin-bottom: 10px;
 }
 
-.author a{
+.morenews .author a{
     text-decoration: none;
     color: black;
     font-size: 10px;
 }
-.author a:hover{
+.morenews .author a:hover{
     color: rgb(71, 71, 71);
     text-decoration: underline;
 }
-.author{
+.morenews .author{
     font-size: 10px;
 }
-.contenido h2{
+.morenews .contenido h2{
     margin-top: 0;
     margin-bottom: 10px;
 }
-.contenido h2 a{
+.morenews .contenido h2 a{
     text-decoration: none;
     color: black;
 }
-.contenido h2 a:hover{
+.morenews .contenido h2 a:hover{
     color: rgb(100, 100, 100);
 }
-.contenido p:nth-of-type(2){
+.morenews .contenido p:nth-of-type(2){
     margin-top: 0;
 }
 .morenews button{
@@ -141,19 +141,19 @@ margin-bottom: 10px;
     height: 50px;
     background-color: aquamarine;
 }
-.button-container{
+.morenews .button-container{
     width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
 }
-.button-container hr{
+.morenews .button-container hr{
     display: flex;
     height: 1px;
     width: 100%;
     background-color: black;
     border: none;
 }
-.button-container button{
+.morenews .button-container button{
     align-self: center;
 }
