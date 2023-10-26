@@ -4,13 +4,18 @@
     align-items: center;
 }
 
+.borde-ext {
+    border: 3px solid black;
+    padding: 3px;
+}
+
 .caja-recom {
     display: flex;
     flex-direction: column;
     height: fit-content;
     width: fit-content;
     align-items: center;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 #lista-recom {
@@ -31,6 +36,12 @@
     height: 300px;
 }
 
+.borde-imagen {
+    border: 2px solid black;
+    border-radius: 50%;
+
+    padding: 5px;
+}
 .cuadro-imagen-recom {
     display: flex;
     border: 1px solid black;
@@ -45,7 +56,7 @@
     justify-content: center;
 }
 
-.enlace-recom, .branded-content-recom{
+.enlace-recom {
     align-items: center;
     justify-content: center;
 }
@@ -54,6 +65,13 @@
     text-align: center;
     font-size: small;
     text-decoration: underline;
+}
+
+.branded-content-recom {
+    text-align: center;
+    font-size: small;
+    color: rgb(211, 0, 0);
+    border: 2px solid rgb(211, 0, 0);
 }
 
 
