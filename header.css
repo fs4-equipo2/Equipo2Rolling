@@ -3,14 +3,14 @@ body{
 }
 
 
-header{
+.header{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 480px;
 }
 
-a{
+.header-a{   /*creo que esto es general en toda la pagina*/
     text-transform: uppercase;
     text-decoration: none;
     color: black;
@@ -18,19 +18,19 @@ a{
     letter-spacing: 1px;
 }
 
-li > a:hover{
+.header-li > a:hover{
     color: rgb(221, 33, 33);
     text-decoration: underline;
     text-underline-offset:9px;
     text-decoration-thickness: 7px; 
 }
 
-div > a:hover{
+.header-div > a:hover{
     color: rgb(179, 175, 175);
     text-decoration: underline;
 }
 
-.primero{
+.header-primero{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,7 +41,7 @@ div > a:hover{
     height: 125px;
 }
 
-.linksLeft{
+.header-linksLeft{
     margin-left: 250px;
     padding-left: 20px;
 
@@ -52,7 +52,7 @@ div > a:hover{
     gap: 5px;
 }
 
-.linksRight{
+.header-linksRight{
     margin-right: 250px;
     padding-right: 20px;
 
@@ -63,19 +63,19 @@ div > a:hover{
     gap: 5px;
 }
 
-.linea{
+.header-linea{
     background-color: black;
     height: 1px;
     width: 10px;
 }
 
-.rsLogo{
+.header-rsLogo{
     width: 30%;
 
     padding: 30px 0px;
 }
 
-.segundo{
+.header-segundo{
     height: 45px;
 
     margin-top: 5px;
@@ -85,7 +85,7 @@ div > a:hover{
     border-right: none;
 }
 
-nav{
+.header-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,7 +95,7 @@ nav{
     margin-right: 250px;
 }
 
-.menuButton, .searchButton{
+.header-menuButton{
     margin-left: 20px;
 
     width: 50px;
@@ -104,19 +104,29 @@ nav{
     position: relative;
 }
 
-img{
+.header-searchButton{
+    margin-left: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+}
+
+
+.header-img{
     position: absolute;
     object-fit: cover;
 }
 
-ul{
+.header-ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
 }
 
-li{
+.header-li{
     list-style-type: none;
     text-align: center;
     justify-content: center;
@@ -125,7 +135,7 @@ li{
 
 @media (max-width: 1300px){
 
-    .linksLeft{
+    .header-linksLeft{
         margin-left: 20px;
         padding-left: 20px;
     
@@ -136,7 +146,7 @@ li{
         gap: 5px;
     }
     
-    .linksRight{
+    .header-linksRight{
         margin-right: 20px;
         padding-right: 20px;
     
@@ -146,7 +156,7 @@ li{
     
         gap: 5px;
     }
-    nav{
+    .header-nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -159,14 +169,14 @@ li{
 
 @media (max-width: 793px){
 
-    header{
+    .header{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 280px;
     }
 
-    .primero{
+    .header-primero{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -177,7 +187,7 @@ li{
         height: 70px;
     }
 
-    .rsLogo{  /*falta cambiar color del logo en mobile version*/
+    .header-rsLogo{  /*falta cambiar color del logo en mobile version*/
         width: 40%;
 
         display: flex;
@@ -185,11 +195,11 @@ li{
         justify-content: center;
     }
 
-    .linksLeft, ul, .linea, #logIn, .searchButton{
+    .header-linksLeft, .header-ul, .header-linea, #header-logIn, .header-searchButton{
         display: none;
     }
 
-    .segundo{
+    .header-segundo{
         height: 6px;
     
         margin-top: 5px;
@@ -198,13 +208,13 @@ li{
         border-bottom: none;
     }
 
-    #menu{
+    #header-menu{
         position: fixed;
         left: 10px;
         top: 13px;
     }
 
-    #subscribe{
+    #header-subscribe{
         position: fixed;
         right: 30px;
         top: 30px;
