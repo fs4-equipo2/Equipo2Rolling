@@ -62,6 +62,7 @@
 .division-tres-fila {
     display: flex;
     flex-direction: row;
+    overflow: scroll;
 }
 .division-tres-fila > *{
     padding-right: 20px;
@@ -74,9 +75,16 @@
     flex-direction: column;
     height: 14.5rem;
     width: 100%;
+    text-overflow: ellipsis;
 }
 
 .division-tres-card-text {
+    height: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.division-tres-card-text a {
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -89,7 +97,4 @@
     border : 3px solid black;
     width: 100%;
     top: 1rem;
-}
-.division-tres-card a {
-    padding-top: 2rem;
 }
