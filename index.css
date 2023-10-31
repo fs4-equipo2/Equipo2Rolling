@@ -9,25 +9,35 @@ body{
     margin: 0;
 }
 
-header{
+
+.header{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 480px;
 }
 
-a{
+.header-a{   /*creo que esto es general en toda la pagina*/
     text-transform: uppercase;
     text-decoration: none;
     color: black;
     font-size: 15px;
+    letter-spacing: 1px;
 }
 
-a:hover{
-    color: brown;
+.header-li > a:hover{
+    color: rgb(221, 33, 33);
+    text-decoration: underline;
+    text-underline-offset:9px;
+    text-decoration-thickness: 7px; 
 }
 
-.primero{
+.header-div > a:hover{
+    color: rgb(179, 175, 175);
+    text-decoration: underline;
+}
+
+.header-primero{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,65 +45,193 @@ a:hover{
 
     border-bottom: 5px solid black;
 
-    height: 130px;
+    height: 125px;
 }
 
-.linksLeft{
+.header-linksLeft{
+    margin-left: 250px;
     padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 5px;
 }
 
-.linksRight{
+.header-linksRight{
+    margin-right: 250px;
     padding-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    gap: 5px;
 }
 
-hr{
+.header-linea{
+    background-color: black;
+    height: 1px;
     width: 10px;
-    color: black;
 }
 
-.rsLogo{
-    width: 50%;
+.header-rsLogo{
+    width: 30%;
+
+    padding: 30px 0px;
 }
 
-.segundo{
+.header-segundo{
+    height: 45px;
+
     margin-top: 5px;
+
     border: 1px solid black;
     border-left: none;
     border-right: none;
 }
 
-nav{
+.header-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
-button{
+.header-menuButton{
+    margin-left: 20px;
+
     width: 50px;
     height: 50px;
+
+    position: relative;
 }
 
-.menuButton{
+.header-searchButton{
     margin-left: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    position: relative;
 }
 
-.searchButton{
-    margin-right: 20px;
+
+.header-img{
+    position: absolute;
+    object-fit: cover;
 }
 
-ul{
+.header-ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
 }
 
-li{
+.header-li{
     list-style-type: none;
     text-align: center;
     justify-content: center;
 }
 
+
+@media (max-width: 1300px){
+
+    .header-linksLeft{
+        margin-left: 20px;
+        padding-left: 20px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+        gap: 5px;
+    }
+    
+    .header-linksRight{
+        margin-right: 20px;
+        padding-right: 20px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    
+        gap: 5px;
+    }
+    .header-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 793px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 280px;
+    }
+
+    .header-primero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        border-bottom: 5px solid black;
+    
+        height: 70px;
+    }
+
+    .header-rsLogo{  /*falta cambiar color del logo en mobile version*/
+        width: 40%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-linksLeft, .header-ul, .header-linea, #header-logIn, .header-searchButton{
+        display: none;
+    }
+
+    .header-segundo{
+        height: 6px;
+    
+        margin-top: 5px;
+    
+        border-top: 1px solid black;
+        border-bottom: none;
+    }
+
+    #header-menu{
+        position: fixed;
+        left: 10px;
+        top: 13px;
+    }
+
+    #header-subscribe{
+        position: fixed;
+        right: 30px;
+        top: 30px;
+
+        color: rgb(179, 175, 175);
+
+        font-size: 10px;
+    }
+
+}
 /* Main: Jaime */
 
 body {
@@ -194,7 +332,7 @@ body {
     background-color: #FFFFFF;
 }
 
-* {
+.division-uno a {
     text-decoration: none;
 }
 
@@ -228,7 +366,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 0.5rem 0;
-    height: 10rem;
+    height: 11rem;
     margin-top: 0.25rem;
     min-width: 100%;
     gap: 1rem;
@@ -269,7 +407,7 @@ body {
 .division-uno-card-text {
     display: flex;
     flex-direction: column;
-    height: 110px;
+    height: 8rem;
     flex-basis: 50%;
 }
 
@@ -279,6 +417,233 @@ body {
     margin: 0.25rem 0 1rem 0;
 }
 
+.division-dos a {
+    text-decoration: none;
+}
+
+.division-dos h2 {
+  font-size: 36px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.division-dos h3 {
+    color: black;
+}
+
+#titulo-rolling {
+    color: #D71920;
+}
+
+.division-dos span {
+    color: black;
+}
+
+.division-dos-borde {
+    border-top: solid 3px black;
+    padding-top: 0.5em;
+}
+
+.division-dos {
+    height: 20rem;
+    width: 100%;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    position: relative;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.division-dos img {
+    object-fit: contain;
+    width: 12rem;
+}
+
+.division-dos-fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.division-dos-fila-logo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5em;
+    max-width: 15rem;
+}
+
+.division-dos-fila-logo-top,  .division-dos-fila-logo-bottom {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.division-dos-card-separador{
+    width: 9.5em;
+    border: 1px solid black;
+    margin: 0.25rem 0 1rem 0;
+}
+
+.division-dos-fila-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.division-dos-fila-cards > * {
+    flex: 1;
+}
+
+.division-dos-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.division-dos-card:nth-child(1), .division-dos-card:nth-child(2), .division-dos-card:nth-child(3) {
+    border-right: solid 1px black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.division-dos-card:nth-child(4) {
+    padding-left: 2rem;
+}
+
+.division-dos-card .division-dos-card-img{
+    height: 8rem;
+    width: auto;
+    overflow: hidden;
+}
+
+#showtime-logo {
+    width: 8rem;
+}
+
+.division-dos-boton-bottom {
+    height: 34px;
+    width: 85px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.division-dos-boton-bottom button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid 1px black;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.division-dos-boton-bottom button span {
+    margin-left: 1ch;
+}
+
+.division-tres a {
+    text-decoration: none;
+    color: black;
+}
+
+.division-tres-borde {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.division-tres-box {
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background-color: #EFEFEF;
+    overflow: hidden;
+}
+
+.division-tres-box img {
+    width: 10rem;
+}
+
+.division-tres-box-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+
+.division-tres-box-titulo-text{
+    padding-left: 1rem;
+    font-size: 15px;
+}
+.division-tres-box-titulo-aviso{
+    min-width: max-content;
+    padding-left: 2rem;
+}
+
+.division-tres-box-top-boton{
+    border-left: 1px solid black;
+    padding-left: 0.5rem;
+    font-size: 13px;
+}   
+
+.division-tres-box-top-boton-borde {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid black;
+    padding-left: 1rem;
+    height: 90px;
+}
+
+.division-tres-box-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+   
+.division-tres-fila {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+.division-tres-fila > *{
+    padding-right: 20px;
+    border-right: 1px solid black;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+.division-tres-card {
+    display: flex;
+    flex-direction: column;
+    height: 14.5rem;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.division-tres-card-text {
+    height: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.division-tres-card-text a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.division-tres-card:last-of-type{
+    border-right: none;
+}
+.division-tres-margen-top-grueso{
+    position: relative;
+    border : 3px solid black;
+    width: 100%;
+    top: 1rem;
+}
+
+
+
 /* Recomendaciones y Quote: Martín */
 
 #recom {
@@ -287,13 +652,18 @@ body {
     align-items: center;
 }
 
+.borde-ext {
+    border: 3px solid black;
+    padding: 3px;
+}
+
 .caja-recom {
     display: flex;
     flex-direction: column;
     height: fit-content;
     width: fit-content;
     align-items: center;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 #lista-recom {
@@ -314,6 +684,12 @@ body {
     height: 300px;
 }
 
+.borde-imagen {
+    border: 2px solid black;
+    border-radius: 50%;
+
+    padding: 5px;
+}
 .cuadro-imagen-recom {
     display: flex;
     border: 1px solid black;
@@ -328,7 +704,7 @@ body {
     justify-content: center;
 }
 
-.enlace-recom, .branded-content-recom{
+.enlace-recom {
     align-items: center;
     justify-content: center;
 }
@@ -337,6 +713,13 @@ body {
     text-align: center;
     font-size: small;
     text-decoration: underline;
+}
+
+.branded-content-recom {
+    text-align: center;
+    font-size: small;
+    color: rgb(211, 0, 0);
+    border: 2px solid rgb(211, 0, 0);
 }
 
 /* Division 2: José Ángel */
@@ -467,9 +850,6 @@ body {
 
 /* Noticias: Denise */
 
-html {
-    scroll-behavior: auto;
-  }
 body{
     /* background-color: aquamarine; */
     margin: 0;
@@ -487,14 +867,14 @@ body{
 .morenews hr:nth-of-type(2){
     margin-top: 3px;
 }
-hr{
+.morenews hr{
     display: flex;
     height: 1px;
     width: 100%;
     background-color: black;
     border: none;
 }
-.sectiontitle{
+.morenews .sectiontitle{
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -507,7 +887,7 @@ hr{
     height: 1700px;
     background-color: white;
 }
-.card{
+.morenews .card{
     width: 100%;
     height: 220px;
     /* background-color: lightblue; */
@@ -517,17 +897,17 @@ hr{
     gap: 20px;
     align-items: center;
     }
-.exclusive{
+.morenews .exclusive{
     height: 350px;
 }
-.exclusive > .imagen{
+.morenews .exclusive > .imagen{
     width: 450px;
     height: 300px;
 }
-.exclusive > .contenido{
+.morenews .exclusive > .contenido{
     height: 300px;
 }
-.exclusive > .contenido p:first-child{
+.morenews .exclusive > .contenido p:first-child{
     font-weight: bolder;
     text-decoration: underline;
     text-decoration-style: double;
@@ -537,39 +917,39 @@ hr{
     margin-bottom: 20px;
 }
 
-.exclusive > .contenido h2{
+.morenews .exclusive > .contenido h2{
     font-size: 30px;
     font-weight: bolder;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.exclusive > .contenido > .author{
+.morenews .exclusive > .contenido > .author{
     font-size: 15px;
 }
-.exclusive > .contenido > .author a{
+.morenews .exclusive > .contenido > .author a{
     font-size: 15px;
 }
 
 
-.imagen{
+.morenews .imagen{
     width: 30%;
     height: 180px;
     align-self: center;
 }
-.imagen img{
+.morenews .imagen img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.contenido{
+.morenews .contenido{
     width: 60%;
     height: 180px;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
 }
-.contenido p:first-child{
+.morenews .contenido p:first-child{
 font-weight: bold;
 text-decoration: underline;
 text-underline-offset: 6px;
@@ -578,31 +958,81 @@ margin-top: 0;
 margin-bottom: 10px;
 }
 
-.author a{
+.morenews .author a{
     text-decoration: none;
     color: black;
     font-size: 10px;
 }
-.author a:hover{
+.morenews .author a:hover{
     color: rgb(71, 71, 71);
     text-decoration: underline;
 }
-.author{
+.morenews .author{
     font-size: 10px;
 }
-.contenido h2{
+.morenews .contenido h2{
     margin-top: 0;
     margin-bottom: 10px;
 }
-.contenido h2 a{
+.morenews .contenido h2 a{
     text-decoration: none;
     color: black;
 }
-.contenido h2 a:hover{
+.morenews .contenido h2 a:hover{
     color: rgb(100, 100, 100);
 }
-.contenido p:nth-of-type(2){
+.morenews .contenido p:nth-of-type(2){
     margin-top: 0;
+}
+
+.morenews .button-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+/* .morenews button{
+    width: 15%;
+    height: 50px;
+    background-color: red;
+    align-self: center;
+    border: none;
+} */
+.morenews .button-container hr:nth-of-type(1){
+    height: 1px;
+    width: 42%;
+    background-color: black;
+    border: none;
+    margin-top: 8px;
+
+}
+.morenews .button-container hr:nth-of-type(2){
+    height: 1px;
+    width: 42%;
+    background-color: black;
+    border: none;
+    margin-top: 8px;
+}
+
+.morenews .button-container .link{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 40px;
+    /* background-color:pink; */
+    align-items: center;
+    /* justify-content: center; */
+    color: black;
+    text-decoration: none;
+}
+.morenews .button-container .link div{
+    font-size: 15px;
+}
+
+.morenews .button-container .link hr{
+    width: 100%;
+    margin-bottom: 0px;
 }
 
 /* Division 3: José Ángel */
