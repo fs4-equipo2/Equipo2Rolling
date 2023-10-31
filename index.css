@@ -1,0 +1,916 @@
+/* Características generales/globales */
+
+
+
+
+/* Header: Camila */
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 480px;
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+a:hover{
+    color: brown;
+}
+
+.primero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 5px solid black;
+
+    height: 130px;
+}
+
+.linksLeft{
+    padding-left: 20px;
+}
+
+.linksRight{
+    padding-right: 20px;
+}
+
+hr{
+    width: 10px;
+    color: black;
+}
+
+.rsLogo{
+    width: 50%;
+}
+
+.segundo{
+    margin-top: 5px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+}
+
+.menuButton{
+    margin-left: 20px;
+}
+
+.searchButton{
+    margin-right: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Main: Jaime */
+
+body {
+    background-color: rgb(255, 3, 3);
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  
+  html {
+      margin: 0;
+  }
+  
+  /* div {
+    display: flex;
+  } */
+  
+  .principal {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 60, 255);
+    padding: 10px;
+    margin: 50px;
+    justify-content: space-between;
+    
+  }
+  
+  .columna {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20vw;
+      height: 60vh;
+      /* padding: 20px; */
+      background-color: black;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+  
+    h3 {
+      font-size: 10px;
+      margin: 10px;
+    }
+  
+    p {
+      font-size: 11px;
+      margin: 10px;
+    }
+    
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+  
+  .noticia{
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+      width: 60vw;
+      height: 60vh;
+      background-color: blueviolet;
+  }
+  
+  .noticia img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .columna2{
+      width: 20vw;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      background-color: chartreuse;
+  }
+
+/* Division 1: José Ángel */
+
+body {
+    background-color: #FFFFFF;
+}
+
+* {
+    text-decoration: none;
+}
+
+.division-uno h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.division-uno h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.division-uno {
+    margin-bottom: 56px;
+    border-top: 1px solid black;
+}
+
+.division-uno-borde {
+    margin-top: 4px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 3.5rem;
+}
+
+.division-uno-fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+    height: 10rem;
+    margin-top: 0.25rem;
+    min-width: 100%;
+    gap: 1rem;
+    overflow: scroll;
+}
+
+.division-uno-cards-container:not(:first-child){
+    padding-left: 24px;
+    margin-left: 24px;
+    border-left: 1px solid black;
+}
+
+.division-uno-card-box {
+    margin: 1rem;
+    gap: 1rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.division-uno-card-img-cont {
+    width: 130px;
+    display: flex;
+    overflow: hidden;
+}
+
+.division-uno-card-img {
+    position: relative;
+    height: 120px;
+  }
+
+.division-uno-card-img > img {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+}
+
+.division-uno-card-text {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    flex-basis: 50%;
+}
+
+.division-uno-card-separador{
+    width: auto;
+    border: 1px solid black;
+    margin: 0.25rem 0 1rem 0;
+}
+
+/* Recomendaciones y Quote: Martín */
+
+#recom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-recom {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#lista-recom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+}
+
+.card-recom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 170px;
+    height: 300px;
+}
+
+.cuadro-imagen-recom {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.imagen-recom {
+    display: flex;
+    justify-content: center;
+}
+
+.enlace-recom, .branded-content-recom{
+    align-items: center;
+    justify-content: center;
+}
+
+.name-recom {
+    text-align: center;
+    font-size: small;
+    text-decoration: underline;
+}
+
+/* Division 2: José Ángel */
+
+* {
+    text-decoration: none;
+}
+
+.division-dos h2 {
+  font-size: 36px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.division-dos h3 {
+    color: black;
+}
+
+#titulo-rolling {
+    color: #D71920;
+}
+
+.division-dos span {
+    color: black;
+}
+
+.division-dos-borde {
+    border-top: solid 3px black;
+    padding-top: 0.5em;
+}
+
+.division-dos {
+    height: 20rem;
+    width: 100%;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    position: relative;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.division-dos img {
+    object-fit: contain;
+    width: 12rem;
+}
+
+.division-dos-fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.division-dos-fila-logo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5em;
+    max-width: 15rem;
+}
+
+.division-dos-fila-logo-top,  .division-dos-fila-logo-bottom {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.division-dos-card-separador{
+    width: 9.5em;
+    border: 1px solid black;
+    margin: 0.25rem 0 1rem 0;
+}
+
+.division-dos-fila-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.division-dos-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.division-dos-card:nth-child(1), .division-dos-card:nth-child(2), .division-dos-card:nth-child(3) {
+    border-right: solid 1px black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.division-dos-card:nth-child(4) {
+    padding-left: 2rem;
+}
+
+.division-dos-card .division-dos-card-img{
+    height: 8rem;
+    width: auto;
+    overflow: hidden;
+}
+
+.division-dos-fila-cards > * {
+    flex: 1;
+}
+
+#showtime-logo {
+    width: 8rem;
+}
+
+.division-dos-boton-bottom {
+    height: 34px;
+    width: 85px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.division-dos-boton-bottom button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid 1px black;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.division-dos-boton-bottom button span {
+    margin-left: 1ch;
+}
+
+/* Noticias: Denise */
+
+html {
+    scroll-behavior: auto;
+  }
+body{
+    /* background-color: aquamarine; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+}
+.morenews hr:first-of-type{
+    height: 6px;
+    margin-bottom: 0;
+}
+.morenews hr:nth-of-type(2){
+    margin-top: 3px;
+}
+hr{
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border: none;
+}
+.sectiontitle{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.morenews{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 945px;
+    height: 1700px;
+    background-color: white;
+}
+.card{
+    width: 100%;
+    height: 220px;
+    /* background-color: lightblue; */
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    }
+.exclusive{
+    height: 350px;
+}
+.exclusive > .imagen{
+    width: 450px;
+    height: 300px;
+}
+.exclusive > .contenido{
+    height: 300px;
+}
+.exclusive > .contenido p:first-child{
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-underline-offset: 6px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.exclusive > .contenido h2{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.exclusive > .contenido > .author{
+    font-size: 15px;
+}
+.exclusive > .contenido > .author a{
+    font-size: 15px;
+}
+
+
+.imagen{
+    width: 30%;
+    height: 180px;
+    align-self: center;
+}
+.imagen img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.contenido{
+    width: 60%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.contenido p:first-child{
+font-weight: bold;
+text-decoration: underline;
+text-underline-offset: 6px;
+font-size: 10px;
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.author a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.author a:hover{
+    color: rgb(71, 71, 71);
+    text-decoration: underline;
+}
+.author{
+    font-size: 10px;
+}
+.contenido h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.contenido h2 a{
+    text-decoration: none;
+    color: black;
+}
+.contenido h2 a:hover{
+    color: rgb(100, 100, 100);
+}
+.contenido p:nth-of-type(2){
+    margin-top: 0;
+}
+
+/* Division 3: José Ángel */
+
+.division-tres a {
+    text-decoration: none;
+    color: black;
+}
+
+.division-tres-borde {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.division-tres-box {
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background-color: #EFEFEF;
+    overflow: hidden;
+}
+
+.division-tres-box img {
+    width: 10rem;
+}
+
+.division-tres-box-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+
+.division-tres-box-titulo-text{
+    padding-left: 1rem;
+    font-size: 15px;
+}
+.division-tres-box-titulo-aviso{
+    min-width: max-content;
+    padding-left: 2rem;
+}
+
+.division-tres-box-top-boton{
+    border-left: 1px solid black;
+    padding-left: 0.5rem;
+    font-size: 13px;
+}   
+
+.division-tres-box-top-boton-borde {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid black;
+    padding-left: 1rem;
+    height: 90px;
+}
+
+.division-tres-box-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+   
+.division-tres-fila {
+    display: flex;
+    flex-direction: row;
+}
+.division-tres-fila > *{
+    padding-right: 20px;
+    border-right: 1px solid black;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+.division-tres-card {
+    display: flex;
+    flex-direction: column;
+    height: 14.5rem;
+    width: 100%;
+}
+
+.division-tres-card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.division-tres-card:last-of-type{
+    border-right: none;
+}
+.division-tres-margen-top-grueso{
+    position: relative;
+    border : 3px solid black;
+    width: 100%;
+    top: 1rem;
+}
+.division-tres-card a {
+    padding-top: 2rem;
+}
+
+/* Footer: María */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .borde1 {
+    border: 1px solid salmon;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .borde2 {
+    border: 1px solid salmon;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .container-completo {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .container-image {
+    display: flex;
+    padding: 20px;
+    width: 600px;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container-completo {
+    width: auto;
+    height: auto;
+  }
+  
+  div .container-contenido1 {
+    width: 100%;
+    height: 55%;
+  }
+  
+  div .container-contenido2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .primera-fila {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  .botones {
+    text-decoration: none;
+    width: 50%;
+  }
+  
+  .botones-lista {
+    flex-direction: column;
+    flex-grow: 0.5;
+    display: flex;
+    margin: 10px;
+  }
+  
+  .boton-blanco-borde {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .boton-blanco-link a {
+    display: flex;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton-negro-borde {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .boton-negro-link a {
+    display: flex;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton-blanco {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  
+  .boton-negro {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  
+  hr {
+    margin: 3px;
+  }
+  
+  /* Rolling y Legal */
+  
+  .segunda-fila {
+    display: flex;
+  }
+  
+  .rolling-legal {
+    display: flex;
+    flex-grow: 0.5;
+    width: 100%;
+  }
+  
+  .rolling-stone {
+    width: 55%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .legal {
+    width: 55%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .listas-rolling-legal {
+    display: flex;
+  }
+  
+  h4 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 100%;
+  }
+  
+  .ulista_rollingstone_legal li {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .follow-us {
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .social-media-junto {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .listas-social-media {
+    display: flex;
+    padding-top: 5px;
+  }
+  
+  .icono {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    margin-right: 10px;
+  }
+  
+  .social-media .red-social {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    padding-top: 5px;
+  }
