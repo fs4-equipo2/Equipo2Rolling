@@ -98,3 +98,27 @@
     width: 100%;
     top: 1rem;
 }
+
+@media only screen and (max-width: 1300px) {
+
+}
+
+@media only screen and (max-width: 793px) {
+    .division-tres h3 {
+        font-size: 15px;
+    }
+    
+    .division-tres-box-titulo-aviso{
+        min-width: max-content;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .division-tres-box-top-boton{
+        display: none;
+    }
+
+    .division-tres-card {
+        height: 11.5rem;
+    }
+}
