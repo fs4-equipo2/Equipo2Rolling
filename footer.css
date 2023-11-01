@@ -5,38 +5,40 @@ body {
 
 footer {
   display: flex;
+  flex-direction: column;
   background-color: black;
   color: white;
-  width: 100%;
-  padding: 40px;
+flex-wrap: wrap;
 }
 
 .borde1 {
-  border: 1px solid salmon;
+  border: 5px solid white;
   margin: 10px;
-  padding: 10px;
-  width: 100%;
+  padding: 5px;
+
 }
 
 .borde2 {
-  border: 1px solid salmon;
-  margin: 10px;
-  padding: 20px;
+  border: 1px solid white;
+  margin: 5px;
+  padding: 10px;
 }
 
 .container-completo {
   display: flex;
+  justify-content: center;
+  margin: 30px;
   flex-direction: row;
 }
 
 .container-image {
   display: flex;
   padding: 20px;
-  width: 600px;
+  width: 500px;
   overflow: hidden;
 }
 
-img {
+.imagen img {
   width: 100%;
   height: auto;
   display: block;
@@ -45,25 +47,25 @@ img {
 .container-completo {
   width: auto;
   height: auto;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
-div .container-contenido1 {
-  width: 100%;
-  height: 55%;
-}
-
-div .container-contenido2 {
+.container-contenido{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
 }
 
-.primera-fila {
+ div .container-contenido1 {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
 }
 
-a {
+
+.container-completo a {
   text-decoration: none;
   color: aliceblue;
 }
@@ -126,7 +128,7 @@ a {
   margin-block-end: 0;
 }
 
-hr {
+.container-completo hr {
   margin: 3px;
 }
 
@@ -158,12 +160,12 @@ hr {
   display: flex;
 }
 
-h4 {
+ .container-completo h4 {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
-ul {
+.container-completo ul {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -206,4 +208,62 @@ ul {
   padding: 5px;
   width: 100%;
   padding-top: 5px;
+}
+
+/* News Letter y Tips */
+
+div .container-contenido2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.primera-fila {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-contenido2 h3 {
+  font-size: 30px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.subscribe .email_boton {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+#email {
+  background-color: black;
+  color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid white;
+  border-top: 1px solid black;
+  width: 200%;
+}
+
+.botonform {
+  color: white;
+  background-color: black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.send_us_atip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+}
+
+.click_sendtip {
+  margin-top: 10px;
 }
