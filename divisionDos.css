@@ -1,5 +1,7 @@
 .division-dos a {
     text-decoration: none;
+    display: block;
+    width: 12rem;
 }
 
 .division-dos h2 {
@@ -11,6 +13,10 @@
 
 .division-dos h3 {
     color: black;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 #titulo-rolling {
@@ -22,12 +28,12 @@
 }
 
 .division-dos-borde {
-    border-top: solid 3px black;
+    border-top: solid 5px black;
     padding-top: 0.5em;
 }
 
 .division-dos {
-    height: 20rem;
+    height: 16rem;
     width: 100%;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
@@ -39,6 +45,7 @@
 .division-dos img {
     object-fit: contain;
     width: 12rem;
+    transform: translateY(-10%);
 }
 
 .division-dos-fila {
@@ -56,7 +63,6 @@
 .division-dos-fila-logo-top,  .division-dos-fila-logo-bottom {
     height: auto;
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -69,6 +75,7 @@
 .division-dos-fila-cards {
     display: flex;
     flex-direction: row;
+    overflow: scroll;
 }
 
 .division-dos-fila-cards > * {
@@ -118,11 +125,39 @@
     cursor: pointer;
 }
 
+.division-dos-boton-bottom button a {
+    width: auto;
+}
+
 .division-dos-boton-bottom button span {
     margin-left: 1ch;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
+    .division-dos {
+        height: 11rem;
+    }
+
+    .division-dos h3{
+        font-size: 1.3rem;
+        -webkit-line-clamp: 4;
+    }
+    .division-dos h2 {
+        font-size: 30px;
+        width: 16rem;
+    }
+
+    .division-dos-card-img {
+        display: none;
+    }
+
+    #showtime-logo {
+        width: 4rem;
+    }
+
+    .division-dos-card:nth-child(1), .division-dos-card:nth-child(2), .division-dos-card:nth-child(3) {
+        border-right: 0;
+    }
 
 }
 
@@ -131,6 +166,7 @@
     .division-dos{
         overflow: scroll;
         position: inherit;
+        height: 19.5rem;
     }
 
     .division-dos h2 {
@@ -139,6 +175,8 @@
 
     .division-dos h3{
         margin: 0;
+        font-size: 1.1rem;
+        -webkit-line-clamp: 3;
     }
     .division-dos-fila {
         height: 30rem;
@@ -155,6 +193,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        overflow:visible;
     }
 
     .division-dos-card {
@@ -166,9 +205,14 @@
         overflow: hidden;
         margin-bottom: 1rem;
     }
+
+    .division-dos-card-img{
+        display:block;
+    }
     
     .division-dos-card:nth-child(1), .division-dos-card:nth-child(2), .division-dos-card:nth-child(3) {
         border-bottom: solid 1px black;
+        border-right: 0;
     }
     .division-dos-boton-bottom {
         transform: translateY(550%);

@@ -5,8 +5,12 @@
 .division-uno h3 {
     padding: 0;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: black;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 .division-uno h4 {
@@ -88,5 +92,4 @@
 }
 
 @media only screen and (max-width: 793px) {
-    
 }
