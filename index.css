@@ -7,6 +7,7 @@
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 
@@ -1382,212 +1383,267 @@ margin-bottom: 10px;
 
 /* Footer: María */
 
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer {
-    display: flex;
-    background-color: black;
-    color: white;
-    width: 100%;
-    padding: 40px;
-  }
-  
-  .borde1 {
-    border: 1px solid salmon;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .borde2 {
-    border: 1px solid salmon;
-    margin: 10px;
-    padding: 20px;
-  }
-  
-  .container-completo {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .container-image {
-    display: flex;
-    padding: 20px;
-    width: 600px;
-    overflow: hidden;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .container-completo {
-    width: auto;
-    height: auto;
-  }
-  
-  div .container-contenido1 {
-    width: 100%;
-    height: 55%;
-  }
-  
-  div .container-contenido2 {
-    display: flex;
-    align-items: center;
-  }
-  
-  .primera-fila {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: aliceblue;
-  }
-  
-  .botones {
-    text-decoration: none;
-    width: 50%;
-  }
-  
-  .botones-lista {
-    flex-direction: column;
-    flex-grow: 0.5;
-    display: flex;
-    margin: 10px;
-  }
-  
-  .boton-blanco-borde {
-    color: black;
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .boton-blanco-link a {
-    display: flex;
-    border: 1px solid black;
-    color: black;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .boton-negro-borde {
-    border: 1px solid white;
-    color: white;
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .boton-negro-link a {
-    display: flex;
-    border: 1px solid white;
-    color: white;
-    background-color: black;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .boton-blanco {
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
-  
-  .boton-negro {
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
-  
-  hr {
-    margin: 3px;
-  }
-  
-  /* Rolling y Legal */
-  
-  .segunda-fila {
-    display: flex;
-  }
-  
-  .rolling-legal {
-    display: flex;
-    flex-grow: 0.5;
-    width: 100%;
-  }
-  
-  .rolling-stone {
-    width: 55%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  .legal {
-    width: 55%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  .listas-rolling-legal {
-    display: flex;
-  }
-  
-  h4 {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-  }
-  
-  ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding-inline-start: 0px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    width: 100%;
-  }
-  
-  .ulista_rollingstone_legal li {
-    display: flex;
-    padding: 10px;
-  }
-  
-  .follow-us {
-    width: 30%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .social-media-junto {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .listas-social-media {
-    display: flex;
-    padding-top: 5px;
-  }
-  
-  .icono {
-    width: 20px;
-    height: 20px;
-    border: 1px solid red;
-    margin-right: 10px;
-  }
-  
-  .social-media .red-social {
-    display: flex;
-    padding: 5px;
-    width: 100%;
-    padding-top: 5px;
-  }
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+flex-wrap: wrap;
+}
+
+.borde1 {
+  border: 5px solid white;
+  margin: 10px;
+  padding: 5px;
+
+}
+
+.borde2 {
+  border: 1px solid white;
+  margin: 5px;
+  padding: 10px;
+}
+
+.container-completo {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  flex-direction: row;
+}
+
+.container-image {
+  display: flex;
+  padding: 20px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container-completo {
+  width: auto;
+  height: auto;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.container-contenido{
+  display: flex;
+  flex-direction: column;
+
+}
+
+ div .container-contenido1 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container-completo a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.botones {
+  text-decoration: none;
+  width: 50%;
+}
+
+.botones-lista {
+  flex-direction: column;
+  flex-grow: 0.5;
+  display: flex;
+  margin: 10px;
+}
+
+.boton-blanco-borde {
+  color: black;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.boton-blanco-link a {
+  display: flex;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-negro-borde {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.boton-negro-link a {
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-blanco {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.boton-negro {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.container-completo hr {
+  margin: 3px;
+}
+
+/* Rolling y Legal */
+
+.segunda-fila {
+  display: flex;
+}
+
+.rolling-legal {
+  display: flex;
+  flex-grow: 0.5;
+  width: 100%;
+}
+
+.rolling-stone {
+  width: 55%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.legal {
+  width: 55%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.listas-rolling-legal {
+  display: flex;
+}
+
+ .container-completo h4 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.container-completo ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 100%;
+}
+
+.ulista_rollingstone_legal li {
+  display: flex;
+  padding: 10px;
+}
+
+.follow-us {
+  width: 30%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social-media-junto {
+  display: flex;
+  flex-direction: column;
+}
+
+.listas-social-media {
+  display: flex;
+  padding-top: 5px;
+}
+
+.icono {
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  margin-right: 10px;
+}
+
+.social-media .red-social {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  padding-top: 5px;
+}
+
+/* News Letter y Tips */
+
+div .container-contenido2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.primera-fila {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-contenido2 h3 {
+  font-size: 30px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.subscribe .email_boton {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+#email {
+  background-color: black;
+  color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid white;
+  border-top: 1px solid black;
+  width: 200%;
+}
+
+.botonform {
+  color: white;
+  background-color: black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.send_us_atip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+}
+
+.click_sendtip {
+  margin-top: 10px;
+}
