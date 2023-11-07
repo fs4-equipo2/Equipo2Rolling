@@ -1,182 +1,211 @@
 #recom {
     height: 100%;
     width: 100%;
-
+  
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 2rem; 
-}
-
-.borde-ext-recom {
+  
+    margin-top: 2rem;
+  }
+  
+  .borde-ext-recom {
     border: 3px solid black;
     padding: 3px;
-}
-
-.caja-recom {
-    height: fit-content;
-    width: fit-content;
-
+  }
+  
+  .caja-recom {
+    height: 100%;
+    width: 100%;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
-
+  
     border: 3px solid black;
-}
-
-.header-recom {
+  }
+  
+  .header-recom {
     width: 304px;
     height: 80px;
     background-color: white;
-
+  
     display: flex;
     align-items: center;
-
+  
     transform: translateY(-60%);
     margin-bottom: -60px;
     padding: 0 10px 0 10px;
-}
-
-#lista-recom {
+  }
+  
+  #lista-recom {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+  
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.card-recom {
+  }
+  
+  .card-recom {
     width: 170px;
     height: 300px;
-
+  
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
+  
     padding: 20px;
-}
-
-.borde-imagen-recom {
+  }
+  
+  .borde-imagen-recom {
     border: 2px solid black;
     border-radius: 50%;
-
+  
     padding: 5px;
-}
-.cuadro-imagen-recom {
+  }
+  .cuadro-imagen-recom {
     width: 150px;
     height: 150px;
-
+  
     display: flex;
-
+  
     border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
-}
-
-.imagen-recom {
+  }
+  
+  .imagen-recom {
     display: flex;
     justify-content: center;
-}
-
-.enlace-recom {
+  }
+  
+  .enlace-recom {
     align-items: center;
     justify-content: center;
-}
-
-.name-recom {
+  }
+  
+  .name-recom {
     text-align: center;
     font-size: small;
     text-decoration: underline;
-}
-
-.branded-content-recom {
+  }
+  
+  .título-recom {
+    text-align: center;
+  }
+  
+  .branded-content-recom {
     color: rgb(211, 0, 0);
-    
+  
     text-align: center;
     font-size: small;
-
+  
     border: 2px solid rgb(211, 0, 0);
-}
-
-.linea-div-recom {
+  }
+  
+  .linea-div-recom {
     height: 300px;
-}
-
-.box-bottom-recom {
+  }
+  
+  .box-bottom-recom {
     background-color: white;
-
+  
     transform: translateY(65%);
     margin-top: -30px;
     padding: 0 10px 0 10px;
-}
-
-.borde-bottom-recom {
+  }
+  
+  .borde-bottom-recom {
     border: 0.5px solid black;
-
+  
     padding: 3px;
-}
-
-.caja-bottom-recom {
+  }
+  
+  .caja-bottom-recom {
     height: 30px;
     display: flex;
     flex-direction: row;
-
+  
     align-items: center;
     justify-content: center;
-
+  
     color: white;
     background-color: black;
-
+  
     gap: 5px;
     padding: 0 10px 0 10px;
-}
-
-.flecha-bottom-recom {
+  }
+  
+  .flecha-bottom-recom {
     height: 12px;
-}
-
-.quote-recom {
+    fill: white;
+  }
+  
+  .quote-recom {
     width: 100%;
     height: 100%;
-
+  
     display: flex;
     flex-direction: column;
     align-items: center;
-
+  
     margin-top: 60px;
+    margin-bottom: 60px;
     border-top: 5px solid black;
-
-}
-
-.caja-quote {
+  }
+  
+  .caja-quote {
     width: 100%;
-
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-
+  
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-
+  
     margin-top: 5px;
-
-}
-
-.title-quote {
+  }
+  
+  .title-quote {
     font-size: xx-large;
     font-weight: bold;
-
+  
     margin-bottom: 0;
-}
-
-.content-quote {
+  }
+  
+  .content-quote {
     display: flex;
     flex-direction: row;
-
+  
     gap: 15px;
-}
+  }
+  
+  /* Media Recommends Tablet: Martin */
+  
+  @media only screen and (max-width: 800px) {
+    .quinto-recom {
+      display: none;
+    }
+  
+    .caja-quote {
+      padding: 20px;
+    }
+    .content-quote {
+      flex-direction: column;
+      align-items: center;
+      gap: unset;
+    }
+  }
+  
+  /* Media Recommends Movil: Martin */
+  
+  @media only screen and (max-width: 600px) {
+    .caja-quote {
+      text-align: center;
+    }
+  }
