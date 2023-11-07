@@ -1243,10 +1243,6 @@ margin-bottom: 10px;
     overflow: hidden;
 }
 
-.division-tres-box img {
-    width: 10rem;
-}
-
 .division-tres-box-top{
     display: flex;
     flex-direction: row;
@@ -1332,6 +1328,10 @@ margin-bottom: 10px;
 
 .division-tres-box-bottom-boton {
     display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+
 }
 
 @media only screen and (max-width: 793px) {
