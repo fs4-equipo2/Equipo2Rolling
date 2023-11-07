@@ -239,7 +239,6 @@ body{
 }
 
 body{
-    /* background-color: rgba(255, 0, 0, 0.514); */
     line-height: 1.35;
 }
 main{
@@ -252,8 +251,6 @@ main{
 .pag-principal{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    /* background-color: rgb(255, 255, 255); */
     margin-bottom: 2.5rem;
     margin-top: 1.75rem;
 }
@@ -507,7 +504,6 @@ main{
 .sec-top-container{
     border-top: 4px solid black;
     /* border-bottom: 4px solid black; */
-    height: 50%;
     display: flex;
     flex-direction: row;
     /* background-color: beige; */
@@ -625,6 +621,228 @@ main{
     margin: 12px 0 16px 0;
     padding: 0 32px 0 0;
 }
+
+
+@media (max-width: 800px){
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    main{
+        width: 800px;
+        margin-top: 0;
+    }
+
+    .pag-principal{
+        margin: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pag-principal :nth-child(1){
+        order: 3;
+    }
+
+    .pp-rest :nth-child(2){
+        order: 3;
+    }
+
+    .pp-rest{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .right-img{
+        width: 752px;
+        height: 501.33px;
+    }
+    .right-img img{
+        width: 752px;
+        height: 501.33px;
+    }
+
+    .right-text{
+        width: 752px;
+
+    }
+
+    .img-container img{
+        width: 752px;
+        height: 501.33px;
+    }
+    .img-container p{
+        top: 480px;
+
+    }
+
+    .right-img-bot{
+        width: 752px;
+        height: 501.33px;
+    }
+    .right-img-bot img{
+        width: 752px;
+        height: 501.33px;
+    }
+
+    .pp-left{
+        border: 0;
+        padding: 0;
+        justify-content: stretch;
+        
+    }
+
+    .pag-secundaria{
+        margin: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pp-left-sec{
+        padding-right: 0;
+        max-width: none;
+    }
+
+    .extra-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        margin-top: 5px;
+    }
+    .sec-top-left{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-bottom: 24px;
+    }
+
+    .sec-top-img{
+        margin-right: 28px;
+    }
+
+    .sec-top-right{
+        display: flex;
+        flex-direction: column;
+        padding-top:24px ;
+        border-top:1px solid black ;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .stl-title{
+        top:0;
+        position: relative;
+    }
+
+    .sec-right-first{
+        display: flex;
+        flex-direction: row;
+        width: 49vw;
+        height: auto;
+    }
+
+    .srf-img{
+        width: 115px;
+        height: 115px;
+    }
+
+    .srf-img img{
+        width: 115px;
+        height: 115px;
+        object-fit: cover;
+        
+    }
+
+    .srf-title{
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sec-right-second{
+        margin-top: 24px;
+        margin-left: 0;
+        border-top: 1px solid black;
+        padding-top: 24px;
+        display: flex;
+        flex-direction: row;
+        width: 49vw;
+    }
+
+    #prueba :nth-child(3){
+        display: none;
+    }
+
+    #prueba1 :nth-child(3){
+        display: none;
+    }
+
+    #prueba1{
+        margin-right: 0;
+        margin-left: 16px;
+        justify-self: flex-start;
+    }
+
+    #prueba1 >h3{
+        margin:0;
+    }
+
+    #new{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-right: 32px;
+        padding-bottom: 0;
+    }
+
+    #newImgCont{
+        width: 343px;
+        height: 228.66px;
+        margin-bottom: 32px;
+    }
+
+    #newImgCont>img{
+        width: 343px;
+        height: 228.66px;
+    }
+
+    #newExtraCont{
+        display: flex;
+        flex-direction: row;
+        padding: 28px 0 0 0;
+
+    }
+
+    #newSecTopRig{
+        padding-top: 0;
+        border-top: none;
+    }
+
+    #newSrsTittle{
+        padding: 0;
+        margin: 0;
+    }
+
+    #newStl{
+        border-left: 1px solid black;
+        padding-left: 32px;
+    }
+
+}
+
+
 /* Division 1: José Ángel */
 
 .division-uno a {
