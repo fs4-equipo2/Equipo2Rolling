@@ -1,0 +1,95 @@
+.division-uno a {
+    text-decoration: none;
+}
+
+.division-uno h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.division-uno h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.division-uno {
+    margin-bottom: 56px;
+    border-top: 1px solid black;
+}
+
+.division-uno-borde {
+    margin-top: 4px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 3.5rem;
+}
+
+.division-uno-fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+    height: 11rem;
+    margin-top: 0.25rem;
+    min-width: 100%;
+    gap: 1rem;
+    overflow: scroll;
+}
+
+.division-uno-cards-container:not(:first-child){
+    padding-left: 24px;
+    margin-left: 24px;
+    border-left: 1px solid black;
+}
+
+.division-uno-card-box {
+    margin: 1rem;
+    gap: 1rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.division-uno-card-img-cont {
+    width: 130px;
+    display: flex;
+    overflow: hidden;
+}
+
+.division-uno-card-img {
+    position: relative;
+    height: 120px;
+  }
+
+.division-uno-card-img > img {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+}
+
+.division-uno-card-text {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    flex-basis: 50%;
+}
+
+.division-uno-card-separador{
+    width: auto;
+    border: 1px solid black;
+    margin: 0.25rem 0 1rem 0;
+}
+
+@media only screen and (max-width: 1300px) {
+
+}
+
+@media only screen and (max-width: 793px) {
+}

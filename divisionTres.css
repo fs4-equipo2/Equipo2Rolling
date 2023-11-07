@@ -1,0 +1,194 @@
+.division-tres h3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin: 0.4rem;
+    font-size: 18px;
+}
+
+.division-tres a {
+    text-decoration: none;
+    color: black;
+}
+
+.division-tres-borde {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.division-tres-box {
+    margin: 0 auto;
+    position: relative;
+    background-color: #EFEFEF;
+    overflow: hidden;
+}
+
+.division-tres-box-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+
+.division-tres-box img {
+    width: 12rem;
+}
+
+.division-tres-box-titulo-text{
+    padding-left: 1rem;
+    font-size: 15px;
+}
+.division-tres-box-titulo-aviso{
+    min-width: max-content;
+    padding-left: 2rem;
+}
+
+.division-tres-box-top-boton{
+    border-left: 1px solid black;
+    padding-left: 0.5rem;
+    font-size: 13px;
+}   
+
+.division-tres-box-top-boton-borde {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid black;
+    padding-left: 1rem;
+    height: 90px;
+}
+
+.division-tres-box-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+   
+.division-tres-fila {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding: 0 1rem;
+}
+.division-tres-fila > *{
+    padding-right: 20px;
+    border-right: 1px solid black;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+.division-tres-card {
+    display: flex;
+    flex-direction: column;
+    height: 14rem;
+    width: 100%;
+}
+
+.division-tres-card-text {
+    height: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.division-tres-card-text a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 12rem;
+    display: inline-block;
+}
+
+.division-tres-card:last-of-type{
+    border-right: none;
+}
+.division-tres-margen-top-grueso{
+    position: relative;
+    border : 3px solid black;
+    width: 100%;
+    top: 1rem;
+}
+
+.division-tres-box-bottom-relative-border {
+    display: none;
+}
+
+.division-tres-box-bottom-boton {
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+
+}
+
+@media only screen and (max-width: 793px) {
+    .division-tres h3 {
+        font-size: 15px;
+        -webkit-line-clamp: 2;
+        margin: 0.2rem;
+    }
+
+    .division-tres-box-top{
+        justify-content: center;
+    }
+
+    .division-tres-box img {
+        width: 13rem;
+    }
+    
+    .division-tres-box-titulo-aviso{
+        min-width: max-content;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .division-tres-box-top-boton{
+        display: none;
+    }
+
+    .division-tres-fila > *{
+        border-right: 0;
+        padding-left: 0;
+    }
+
+    .division-tres-card {
+        height: 11.5rem;
+    }
+
+    .division-tres-card-text a {
+        width: 13rem;
+    }
+
+    .division-tres-box-bottom-relative-border{
+        display:flex;
+        position: relative;
+        border : 1px solid black;
+        width: 100%;
+        top: 1rem;
+    }
+
+    .division-tres-box-bottom-boton {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .division-tres-box-bottom-boton-borde {
+        height: 1.8rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EFEFEF;
+        border: 1px solid black;
+        font-weight: bold;
+    }
+    .division-tres-box-bottom-boton-borde-int{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding: 0 0.3rem;
+        height: 1.8rem;
+    }
+}
