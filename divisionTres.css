@@ -3,6 +3,8 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    margin: 0.4rem;
+    font-size: 18px;
 }
 
 .division-tres a {
@@ -33,7 +35,7 @@
 }
 
 .division-tres-box img {
-    width: 10rem;
+    width: 12rem;
 }
 
 .division-tres-box-titulo-text{
@@ -69,6 +71,7 @@
     display: flex;
     flex-direction: row;
     overflow: scroll;
+    padding: 0 1rem;
 }
 .division-tres-fila > *{
     padding-right: 20px;
@@ -79,9 +82,8 @@
 .division-tres-card {
     display: flex;
     flex-direction: column;
-    height: 14.5rem;
+    height: 14rem;
     width: 100%;
-    text-overflow: ellipsis;
 }
 
 .division-tres-card-text {
@@ -93,8 +95,8 @@
 .division-tres-card-text a {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 10rem;
-    display: inline;
+    width: 12rem;
+    display: inline-block;
 }
 
 .division-tres-card:last-of-type{
@@ -122,10 +124,16 @@
 @media only screen and (max-width: 793px) {
     .division-tres h3 {
         font-size: 15px;
+        -webkit-line-clamp: 2;
+        margin: 0.2rem;
     }
 
     .division-tres-box-top{
         justify-content: center;
+    }
+
+    .division-tres-box img {
+        width: 13rem;
     }
     
     .division-tres-box-titulo-aviso{
@@ -138,8 +146,17 @@
         display: none;
     }
 
+    .division-tres-fila > *{
+        border-right: 0;
+        padding-left: 0;
+    }
+
     .division-tres-card {
         height: 11.5rem;
+    }
+
+    .division-tres-card-text a {
+        width: 13rem;
     }
 
     .division-tres-box-bottom-relative-border{
