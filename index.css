@@ -1022,19 +1022,19 @@ main{
 
 /* Noticias: Denise */
 
-body{
-    /* background-color: aquamarine; */
+.masnoticias{
+    /* background-color: aquamarine;  */
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 1500px;
 
 }
 .morenews hr:first-of-type{
-    height: 6px;
-    margin-bottom: 0;
+    height: 7px;
+    margin-bottom: 2px;
 }
 .morenews hr:nth-of-type(2){
     margin-top: 3px;
@@ -1047,21 +1047,21 @@ body{
     border: none;
 }
 .morenews .sectiontitle{
-    font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .morenews{
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 945px;
-    height: 1700px;
+    width: 964px;
+    height: 100%;
     background-color: white;
 }
 .morenews .card{
     width: 100%;
-    height: 220px;
+    height: 250px;
     /* background-color: lightblue; */
     align-self: center;
     display: flex;
@@ -1125,30 +1125,32 @@ body{
 font-weight: bold;
 text-decoration: underline;
 text-underline-offset: 6px;
-font-size: 10px;
+font-size: 13px;
 margin-top: 0;
-margin-bottom: 10px;
+margin-bottom: 5px;
 }
 
 .morenews .author a{
     text-decoration: none;
     color: black;
-    font-size: 10px;
+    font-size: 12px;
 }
 .morenews .author a:hover{
     color: rgb(71, 71, 71);
     text-decoration: underline;
 }
 .morenews .author{
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 7px;
 }
 .morenews .contenido h2{
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .morenews .contenido h2 a{
     text-decoration: none;
     color: black;
+    font-size: 28px;
 }
 .morenews .contenido h2 a:hover{
     color: rgb(100, 100, 100);
