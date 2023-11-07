@@ -1439,6 +1439,10 @@ margin-bottom: 5px;
     margin-top: 2rem;
 }
 
+.division-tres-box img {
+    width: 10rem;
+}
+
 .division-tres-box-titulo-text{
     padding-left: 1rem;
     font-size: 15px;
@@ -1496,6 +1500,8 @@ margin-bottom: 5px;
 .division-tres-card-text a {
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 10rem;
+    display: inline;
 }
 
 .division-tres-card:last-of-type{
@@ -1514,10 +1520,6 @@ margin-bottom: 5px;
 
 .division-tres-box-bottom-boton {
     display: none;
-}
-
-@media only screen and (max-width: 1300px) {
-
 }
 
 @media only screen and (max-width: 793px) {
