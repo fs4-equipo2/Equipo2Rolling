@@ -1,15 +1,18 @@
 /* Características generales/globales */
 
-
-
-
-/* Header: Camila */
+:root {
+  --tablet: 800px;
+  --mobile: 600px;
+  --desktop: 1200px;
+}
 
 body{
     margin: 0;
     padding: 0;
 }
 
+
+/* Header: Camila */
 
 .header{
     display: flex;
@@ -1388,14 +1391,13 @@ footer {
   flex-direction: column;
   background-color: black;
   color: white;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .borde1 {
   border: 5px solid white;
   margin: 10px;
   padding: 5px;
-
 }
 
 .borde2 {
@@ -1433,17 +1435,15 @@ flex-wrap: wrap;
   margin-right: 90px;
 }
 
-.container-contenido{
-  display: flex;
-  flex-direction: column;
-
-}
-
- div .container-contenido1 {
+.container-contenido {
   display: flex;
   flex-direction: column;
 }
 
+div .container-contenido1 {
+  display: flex;
+  flex-direction: column;
+}
 
 .container-completo a {
   text-decoration: none;
@@ -1512,10 +1512,11 @@ flex-wrap: wrap;
   margin: 3px;
 }
 
-/* Rolling y Legal */
+/* Foter Rolling y Legal */
 
-.segunda-fila {
+.primera-fila {
   display: flex;
+  flex-direction: row;
 }
 
 .rolling-legal {
@@ -1540,7 +1541,7 @@ flex-wrap: wrap;
   display: flex;
 }
 
- .container-completo h4 {
+.container-completo h4 {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
@@ -1590,19 +1591,28 @@ flex-wrap: wrap;
   padding-top: 5px;
 }
 
-/* News Letter y Tips */
-
-div .container-contenido2 {
+.texto_terms {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  text-align: center;
 }
 
-.primera-fila {
+/* Footer News Letter y Tips */
+
+.container-contenido2 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+.segunda-fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.newsletter_signup {
+  display: flex;
+  flex-direction: column;
 }
 
 .container-contenido2 h3 {
@@ -1614,7 +1624,11 @@ div .container-contenido2 {
 .subscribe .email_boton {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 50%;
+}
+
+.subscribe {
+  padding: 10px;
 }
 
 #email {
@@ -1639,11 +1653,388 @@ div .container-contenido2 {
 .send_us_atip {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  text-align: center;
+  gap: 10px;
+  justify-content: space-between;
+  text-align: justify;
+}
 
+.texto_tip {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 50%;
+}
+
+.click a {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.sendatip {
+  padding-left: 20px;
+  padding-top: 20px;
+  border-left: 1px solid white;
+}
+
+.send-tip-container {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 100%;
 }
 
 .click_sendtip {
-  margin-top: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  padding-right: 4%;
+}
+
+.linea-tip {
+  border-bottom: 1px solid white;
+  margin-left: 30px;
+  width: 65%;
+}
+
+/* After Footer */
+
+.after-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  margin: 10px;
+  max-width: 100%;
+}
+
+.icon-after-footer img {
+  height: 160px;
+}
+
+.textpmc_afterfooter p {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer DropDown */
+
+.dropdown_af {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid black;
+  padding: 10px;
+  padding-right: 200px;
+  margin-left: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.dropdown-site a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-site {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: auto;
+  bottom: 100%;
+  right: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+  white-space: nowrap;
+  text-align: start;
+}
+
+.dropdown-list li {
+  padding: 10px 20px;
+}
+
+.dropdown_af:hover .dropdown-list {
+  display: flex;
+  flex-direction: column;
+  padding-right: 200px;
+}
+
+.dropdown-list li:hover a {
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown_af a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Footer Media Querie  tablet 800*/
+
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .borde1 {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .borde2 {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .segunda-fila {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container-completo {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 8px;
+  }
+
+  .container-image {
+    display: none;
+  }
+
+  .container-contenido {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .rolling-stone {
+    padding: 10px;
+  }
+
+  .legal {
+    padding: 10px;
+  }
+
+  .botones {
+    width: 100%;
+  }
+
+  .boton-blanco-borde {
+    padding: 5px;
+    margin: 5px;
+  }
+  .boton-negro-borde {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .send_us_atip h3 {
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+
+  .send_us_atip a {
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 0.5em;
+  }
+
+  .send_us_atip p {
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  .newsletter h3 {
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+  .newsletter p {
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 0.5em;
+  }
+}
+
+.after-footer p {
+  text-align: left;
+  flex-wrap: wrap;
+  font-size: 0.5em;
+}
+
+.icon-after-footer img {
+  height: 90px;
+}
+
+.dropdown_af {
+  padding-right: 100px;
+  margin-left: 0px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.subscribe .email_boton {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+
+.newsletter {
+  padding-right: 0px;
+}
+
+.sendatip {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.send-tip-container {
+  height: 0;
+  padding-top: 20px;
+}
+
+.send-tip-container a {
+  font-size: 16px;
+  padding: 0;
+}
+
+/* Footer Estilos para dispositivos de 600px o menos */
+@media (max-width: 600px) {
+  footer {
+    display: block;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .borde1 {
+    border: 0.5px solid white;
+    width: 90%;
+  }
+  .container-completo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-completo hr {
+    display: none;
+  }
+
+  .primera-fila {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rolling-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .follow-us {
+    display: none;
+  }
+
+  .rolling-stone {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+
+  .listas-rolling-legal {
+    display: none;
+    position: absolute;
+  }
+
+  .rolling-stone:hover .listas-rolling-legal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px;
+    width: 80%;
+    position: static;
+    
+  }
+
+  .ulista_rollingstone_legal {
+    align-items: center;
+  }
+
+  .rolling-legal h4 {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .legal {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+
+  .legal:hover .ulista_rollingstone_legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px;
+    width: 80%;
+    position: static;
+  }
+
+  .legal ul {
+    display: none;
+  }
+  .container-contenido2 {
+    display: none;
+  }
+
+  .after-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+  }
+
+.dropdown_af:hover .dropdown-list{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  justify-content: center;
+ width: 100%;
+}
 }
