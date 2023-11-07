@@ -22,10 +22,6 @@
     overflow: hidden;
 }
 
-.division-tres-box img {
-    width: 10rem;
-}
-
 .division-tres-box-top{
     display: flex;
     flex-direction: row;
