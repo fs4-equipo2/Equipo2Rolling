@@ -1,4 +1,14 @@
 /* Características generales/globales */
+:root {
+  --tablet: 800px;
+  --mobile: 600px;
+  --desktop: 1200px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
 
 
 
