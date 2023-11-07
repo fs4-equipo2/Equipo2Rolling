@@ -102,6 +102,10 @@
     border: 2px solid rgb(211, 0, 0);
 }
 
+.linea-div-recom {
+    height: 300px;
+}
+
 .box-bottom-recom {
     background-color: white;
 
