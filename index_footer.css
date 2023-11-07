@@ -1,4 +1,5 @@
 /* Características generales/globales */
+
 :root {
   --tablet: 800px;
   --mobile: 600px;
@@ -11,15 +12,7 @@ body{
 }
 
 
-
-
 /* Header: Camila */
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
 
 .header{
     display: flex;
@@ -730,82 +723,57 @@ main{
 /* Recomendaciones y Quote: Martín */
 
 #recom {
-    height: 100%;
-    width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 2rem; 
+    width: 100%;
 }
 
-.borde-ext-recom {
+.borde-ext {
     border: 3px solid black;
     padding: 3px;
 }
 
 .caja-recom {
-    height: fit-content;
-    width: fit-content;
-
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    width: fit-content;
     align-items: center;
-
     border: 3px solid black;
-}
-
-.header-recom {
-    width: 304px;
-    height: 80px;
-    background-color: white;
-
-    display: flex;
-    align-items: center;
-
-    transform: translateY(-60%);
-    margin-bottom: -60px;
-    padding: 0 10px 0 10px;
 }
 
 #lista-recom {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    margin: 0;
-    padding: 0;
+    padding: 10px;
     list-style: none;
 }
 
 .card-recom {
-    width: 170px;
-    height: 300px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     padding: 20px;
+    width: 170px;
+    height: 300px;
 }
 
-.borde-imagen-recom {
+.borde-imagen {
     border: 2px solid black;
     border-radius: 50%;
 
     padding: 5px;
 }
 .cuadro-imagen-recom {
-    width: 150px;
-    height: 150px;
-
     display: flex;
-
     border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
+    width: 150px;
+    height: 150px;
 }
 
 .imagen-recom {
@@ -825,91 +793,10 @@ main{
 }
 
 .branded-content-recom {
-    color: rgb(211, 0, 0);
-    
     text-align: center;
     font-size: small;
-
+    color: rgb(211, 0, 0);
     border: 2px solid rgb(211, 0, 0);
-}
-
-.linea-div-recom {
-    height: 300px;
-}
-
-.box-bottom-recom {
-    background-color: white;
-
-    transform: translateY(65%);
-    margin-top: -30px;
-    padding: 0 10px 0 10px;
-}
-
-.borde-bottom-recom {
-    border: 0.5px solid black;
-
-    padding: 3px;
-}
-
-.caja-bottom-recom {
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: center;
-
-    color: white;
-    background-color: black;
-
-    gap: 5px;
-    padding: 0 10px 0 10px;
-}
-
-.flecha-bottom-recom {
-    height: 12px;
-}
-
-.quote-recom {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 60px;
-    border-top: 5px solid black;
-
-}
-
-.caja-quote {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-
-    margin-top: 5px;
-
-}
-
-.title-quote {
-    font-size: xx-large;
-    font-weight: bold;
-
-    margin-bottom: 0;
-}
-
-.content-quote {
-    display: flex;
-    flex-direction: row;
-
-    gap: 15px;
 }
 
 /* Division 2: José Ángel */
@@ -1138,18 +1025,19 @@ main{
 
 /* Noticias: Denise */
 
-.masnoticias{
+body{
+    /* background-color: aquamarine; */
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 1500px;
+    width: 100vw;
+    height: 100vh;
 
 }
 .morenews hr:first-of-type{
-    height: 7px;
-    margin-bottom: 2px;
+    height: 6px;
+    margin-bottom: 0;
 }
 .morenews hr:nth-of-type(2){
     margin-top: 3px;
@@ -1162,21 +1050,21 @@ main{
     border: none;
 }
 .morenews .sectiontitle{
-    font-size: 22px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .morenews{
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 964px;
-    height: 100%;
+    width: 945px;
+    height: 1700px;
     background-color: white;
 }
 .morenews .card{
     width: 100%;
-    height: 250px;
+    height: 220px;
     /* background-color: lightblue; */
     align-self: center;
     display: flex;
@@ -1240,32 +1128,30 @@ main{
 font-weight: bold;
 text-decoration: underline;
 text-underline-offset: 6px;
-font-size: 13px;
+font-size: 10px;
 margin-top: 0;
-margin-bottom: 5px;
+margin-bottom: 10px;
 }
 
 .morenews .author a{
     text-decoration: none;
     color: black;
-    font-size: 12px;
+    font-size: 10px;
 }
 .morenews .author a:hover{
     color: rgb(71, 71, 71);
     text-decoration: underline;
 }
 .morenews .author{
-    font-size: 12px;
-    margin-top: 7px;
+    font-size: 10px;
 }
 .morenews .contenido h2{
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 .morenews .contenido h2 a{
     text-decoration: none;
     color: black;
-    font-size: 28px;
 }
 .morenews .contenido h2 a:hover{
     color: rgb(100, 100, 100);
@@ -1281,7 +1167,13 @@ margin-bottom: 5px;
     flex-direction: row;
     gap: 0;
 }
-
+/* .morenews button{
+    width: 15%;
+    height: 50px;
+    background-color: red;
+    align-self: center;
+    border: none;
+} */
 .morenews .button-container hr:nth-of-type(1){
     height: 1px;
     width: 42%;
@@ -1303,7 +1195,9 @@ margin-bottom: 5px;
     flex-direction: column;
     width: 15%;
     height: 40px;
+    /* background-color:pink; */
     align-items: center;
+    /* justify-content: center; */
     color: black;
     text-decoration: none;
 }
@@ -1314,93 +1208,6 @@ margin-bottom: 5px;
 .morenews .button-container .link hr{
     width: 100%;
     margin-bottom: 0px;
-}
-@media (max-width: 600px){
-    .morenews .imagen{
-        width: 100%;
-        height: 400px;
-    }
-    .masnoticias{
-        width: 100%;
-        height: 3200px;
-    }
-    .morenews{
-        width: 100%;
-
-    }
-    .morenews .card{
-        flex-direction: column;
-        align-items: start;
-        gap: 0;
-        height: 600px;
-    }
-    .morenews .contenido{
-        width: 100%;
-        margin-top: 20px;
-    }
-    .morenews .exclusive .imagen{
-        width: 100%;
-        height: 400px;
-    }
-
-    .morenews .button-container .link{
-        margin-top: 8px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .morenews .button-container hr:nth-of-type(1){
-        margin-top: 15px;
-    }
-    .morenews .button-container hr:nth-of-type(2){
-        margin-top: 15px;
-    }
-    .morenews .author{
-        font-size: 15px;
-    }
-    .morenews .author a{
-        font-size: 15px;
-    }
-
-
-}
-
-@media (min-width: 601px) and (max-width: 800px){
-    .morenews .imagen{
-        display: none;
-    }
-    .masnoticias{
-        min-width: 600px;
-        max-width: 700px;
-        align-content: center;
-        height: 1000px;
-    }
-    .morenews{
-        width: 100%;
-        margin-left: 30px;
-
-    }
-    .morenews .card{
-        flex-direction: column;
-        align-items: start;
-        gap: 0;
-        height: 160px;
-    }
-    .morenews .contenido{
-        width: 100%;
-    }
-    .morenews .contenido p:first-child{
-        font-size: 10px;
-    }
-    .morenews .contenido h2 a{
-        font-size: 22px;
-    }
-    .morenews .exclusive > .contenido h2{
-        font-size: 30px;
-        font-weight: bolder;
-        margin-top: 0;
-       margin-bottom: 0;
-    }
-    
 }
 
 /* Division 3: José Ángel */
@@ -1427,6 +1234,10 @@ margin-bottom: 5px;
     position: relative;
     background-color: #EFEFEF;
     overflow: hidden;
+}
+
+.division-tres-box img {
+    width: 10rem;
 }
 
 .division-tres-box-top{
@@ -1514,10 +1325,6 @@ margin-bottom: 5px;
 
 .division-tres-box-bottom-boton {
     display: none;
-}
-
-@media only screen and (max-width: 1300px) {
-
 }
 
 @media only screen and (max-width: 793px) {
