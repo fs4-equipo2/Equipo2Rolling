@@ -656,7 +656,7 @@ h3 {
     margin-top: 0.25rem;
     min-width: 100%;
     gap: 1rem;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .division-uno-cards-container{
@@ -705,6 +705,18 @@ h3 {
     width: auto;
     border: 1px solid black;
     margin: 0.25rem 0 0.8rem 0;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .division-uno {
+        margin-bottom: 0;
+    }
+
+    .division-uno-borde{
+        margin-bottom: 0;
+    }
+
 }
 
 
@@ -1026,8 +1038,16 @@ h3 {
     -webkit-line-clamp: 3;
 }
 
+.titulo-responsive{
+    display: none;
+}
+
 #titulo-rolling {
     color: #D71920;
+}
+
+#titulo-rolling-responsive{
+    display: none;
 }
 
 .division-dos-borde span {
@@ -1082,7 +1102,7 @@ h3 {
 .division-dos-fila-cards {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .division-dos-fila-cards > * {
@@ -1144,9 +1164,14 @@ h3 {
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
     .division-dos {
         height: 11rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .division-dos-borde a{
+        width: 100%;
     }
 
     .division-dos h3{
@@ -1162,12 +1187,40 @@ h3 {
         display: none;
     }
 
+    .titulo-init{
+        display: none;
+    }
+
+    .titulo-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo-rolling-responsive{
+        color: #D71920;
+        display: flex;
+    }
+
     #showtime-logo {
         width: 4rem;
     }
 
+    .division-dos-fila{
+        justify-content: space-between;
+    }
+
+    .division-dos-fila-logo {
+        max-width: 9rem;
+    }
+
     .division-dos-card:nth-child(1), .division-dos-card:nth-child(2), .division-dos-card:nth-child(3) {
         border-right: 0;
+        padding-right: 0;
+        padding-left: 1.5rem;
+    }
+
+    .division-dos-card-separador{
+        width: 8rem;
     }
 
 }
@@ -1175,9 +1228,10 @@ h3 {
 @media only screen and (max-width: 793px) {
     
     .division-dos{
-        overflow: scroll;
+        overflow: auto;
         position: inherit;
         height: 19.5rem;
+        margin-bottom: 0;
     }
 
     .division-dos h2 {
@@ -1234,9 +1288,7 @@ h3 {
         display: flex;
         height: 34px;
         width: 85px;
-        bottom: 0;
-        right: 0;
-        transform: translateY(-250%);
+        transform: translateY(-50%);
         margin-left: 80%
     }
     
@@ -1461,6 +1513,7 @@ h3 {
   .morenews .contenido {
     width: 100%;
     margin-top: 20px;
+    height: auto;
   }
   .morenews .exclusive .imagen {
     width: 100%;
@@ -1620,7 +1673,7 @@ h3 {
 .division-tres-fila {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow: auto;
     padding: 0 1rem;
 }
 .division-tres-fila > *{
@@ -1675,7 +1728,7 @@ h3 {
     }
 
     .division-tres-box-top{
-        justify-content: center;
+        justify-content: start;
     }
 
     .division-tres-box img {
