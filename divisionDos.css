@@ -148,11 +148,11 @@
 @media only screen and (max-width: 1000px) {
     .division-dos {
         height: 11rem;
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
     }
 
     .division-dos-borde a{
-        width: 8rem;
+        width: 100%;
     }
 
     .division-dos h3{
