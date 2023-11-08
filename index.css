@@ -1086,7 +1086,7 @@ h3 {
 @media only screen and (max-width: 1300px) {
     .division-dos {
         height: 11rem;
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
     }
 
     .division-dos-borde a{
