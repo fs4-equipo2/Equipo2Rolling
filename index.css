@@ -1323,7 +1323,7 @@ h3 {
 
 .morenews .button-container .outsidehr {
   height: 1px;
-  width: 42%;
+  width: 45%;
   background-color: black;
   border: none;
   margin-top: 18px;
@@ -1353,6 +1353,9 @@ h3 {
   
 }
 @media (max-width: 600px) {
+  .morenews .sectiontitle{
+    margin-left: 10px;
+  }
   .morenews .imagen {
     width: 100%;
     height: 400px;
@@ -1369,6 +1372,10 @@ h3 {
     align-items: start;
     gap: 0;
     height: 600px;
+    width: 92%;
+  }
+  .morenews .exclusive{
+    height: 550px;
   }
   .morenews .contenido {
     width: 100%;
@@ -1379,10 +1386,15 @@ h3 {
     height: 400px;
   }
 
+  .morenews .button-container {
+    width: 92%;
+    align-self: center;
+  }
   .morenews .button-container .link {
-    margin-top: 8px;
     margin-left: 5px;
     margin-right: 5px;
+    width: 28%;
+    margin-top: 0;
   }
 
   .morenews .author {
@@ -1391,9 +1403,22 @@ h3 {
   .morenews .author a {
     font-size: 15px;
   }
-  .morenews .button-container .link{
-    width: 25%;
-    margin-top: 0;
+  
+  .morenews hr{
+    width: 92%;
+    align-self: center;
+  }
+  .morenews hr:nth-of-type(1){
+    width: 100%;
+    align-self: auto;
+  }
+  .morenews hr:nth-of-type(2){
+    width: 100%;
+    align-self: auto;
+  }
+  .morenews hr:nth-of-type(3){
+    width: 100%;
+    align-self: auto;
   }
 }
 
