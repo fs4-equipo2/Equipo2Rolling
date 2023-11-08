@@ -70,7 +70,7 @@
 .division-tres-fila {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow: auto;
     padding: 0 1rem;
 }
 .division-tres-fila > *{
@@ -129,7 +129,7 @@
     }
 
     .division-tres-box-top{
-        justify-content: center;
+        justify-content: start;
     }
 
     .division-tres-box img {

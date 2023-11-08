@@ -23,6 +23,10 @@
     color: #D71920;
 }
 
+#titulo-rolling-responsive{
+    display: none;
+}
+
 .division-dos-borde span {
     color: black;
 }
@@ -75,7 +79,7 @@
 .division-dos-fila-cards {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .division-dos-fila-cards > * {
@@ -140,6 +144,11 @@
 @media only screen and (max-width: 1000px) {
     .division-dos {
         height: 11rem;
+        margin-bottom: 0;
+    }
+
+    .division-dos-borde a{
+        width: 8rem;
     }
 
     .division-dos h3{
@@ -155,12 +164,35 @@
         display: none;
     }
 
+    .titulo-init{
+        display: none;
+    }
+
+    #titulo-rolling-responsive{
+        color: #D71920;
+        display: flex;
+    }
+
     #showtime-logo {
         width: 4rem;
     }
 
+    .division-dos-fila{
+        justify-content: flex-start;
+    }
+
+    .division-dos-fila-logo {
+        max-width: 9rem;
+    }
+
     .division-dos-card:nth-child(1), .division-dos-card:nth-child(2), .division-dos-card:nth-child(3) {
         border-right: 0;
+        padding-right: 0;
+        padding-left: 1.5rem;
+    }
+
+    .division-dos-card-separador{
+        width: 8rem;
     }
 
 }
@@ -168,9 +200,10 @@
 @media only screen and (max-width: 793px) {
     
     .division-dos{
-        overflow: scroll;
+        overflow: auto;
         position: inherit;
         height: 19.5rem;
+        margin-bottom: 0;
     }
 
     .division-dos h2 {
@@ -227,9 +260,7 @@
         display: flex;
         height: 34px;
         width: 85px;
-        bottom: 0;
-        right: 0;
-        transform: translateY(-250%);
+        transform: translateY(-50%);
         margin-left: 80%
     }
     
