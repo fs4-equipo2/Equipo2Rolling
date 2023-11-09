@@ -1527,7 +1527,7 @@ h3 {
   .morenews .button-container .link {
     margin-left: 5px;
     margin-right: 5px;
-    width: 28%;
+    width: 60%;
     margin-top: 0;
   }
 
@@ -1572,7 +1572,7 @@ h3 {
     flex-direction: column;
     align-items: start;
     gap: 0;
-    height: 140px;
+    height: 150px;
   }
   .morenews .exclusive {
     height: 200px;
@@ -1595,7 +1595,7 @@ h3 {
     margin-bottom: 0;
   }
   .morenews .button-container .link{
-    width: 18%;
+    width: 28%;
   }
 }
 
